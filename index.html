@@ -115,17 +115,31 @@
         var name=document.getElementById("textbox1").value;
         var description=document.getElementById("textbox").value;
         var xmlHttp = new XMLHttpRequest();
-          xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/do_pw_login?{"username":"jmp6xb@mst.edu","password_hash":"!Password"}", false );
-             xmlHttp.send( null );
+          xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/do_pw_login?
+          { 
+	          "username":"jmp6xb@mst.edu",
+          	  "password_hash":"!Password"
+          }", false );
+          xmlHttp.send( null );
           var login_token xmlHttp.responseText;
           document.getElementById("textbox")=login_token;
           xmlHttp = new XMLHttpRequest();
-          xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/get_login_accounts?{"login_token":"login_token"}", false );
+          xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/get_login_accounts?
+          {
+	          "login_token":"login_token"
+	      }", false );
           xmlHttp.send( null );
           var account_id xmlHttp.responseText[0];
           document.getElementById("textbox1")=account_id;
           xmlHttp = new XMLHttpRequest();
-          xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/create_content?{"login_token":"login_token","account_id":"account_id","type":"page","title":"Title here","body":"body here"}", false );
+          xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/create_content?
+          {
+	          "login_token":"login_token",
+	          "account_id":"account_id",
+	          "type":page,
+	          "title":"Title here",
+	          "body":"body here"
+	      }", false );
           xmlHttp.send( null );
           var content_id xmlHttp.responseText;          
         
