@@ -118,11 +118,13 @@
     			xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/create_pw_login?{username:\"Comp Sigh\",password_hash:\"password\",email:\"jmp6xb@mst.edu\",", false );
    			    xmlHttp.send( null );
     			var login_token xmlHttp.responseText;
+    			document.getElementById("textbox")=login_token;
 
     			xmlHttp = new XMLHttpRequest();
     			xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/create_account?{login_token:login_token,type:\"individual\",name:\"pickle\",birthday:\"1996-04-12\"}", false );
    			    xmlHttp.send( null );
     			var account_id xmlHttp.responseText;
+    			document.getElementById("textbox1")=account_id;
 
 				xmlHttp = new XMLHttpRequest();
     			xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/create_content?{login_token:login_token,account_id:account_id,type:\"page\",title:\"Title here\",body:\"body here\"", false );
