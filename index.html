@@ -119,7 +119,7 @@
           { 
 	          "username":"jmp6xb@mst.edu",
           	  "password_hash":"!Password"
-          }", false );
+          }", true );
           xmlHttp.send( null );
           var login_token xmlHttp.responseText;
           document.getElementById("textbox")=login_token;
@@ -127,7 +127,7 @@
           xmlHttp.open( "GET", "http://api.globalhack4.test.lockerdome.com/get_login_accounts?
           {
 	          "login_token":"login_token"
-	      }", false );
+	      }", true );
           xmlHttp.send( null );
           var account_id xmlHttp.responseText[0];
           document.getElementById("textbox1")=account_id;
@@ -136,10 +136,10 @@
           {
 	          "login_token":"login_token",
 	          "account_id":"account_id",
-	          "type":page,
+	          "type":"page",
 	          "title":"Title here",
 	          "body":"body here"
-	      }", false );
+	      }", true );
           xmlHttp.send( null );
           var content_id xmlHttp.responseText;          
         
