@@ -6,13 +6,14 @@
 -->
 <html>
 	<head>
-		<title>Comp Sigh Demp</title>
+		<title>Comp Sigh Demo</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
+		
+	 </head>
 	<body>
 
 		<!-- Header -->
@@ -57,7 +58,9 @@
 									    </p>
 									</header>
 									<p>Enter text below to add to Lockerdome Window</p>
+									<textarea name="textbox" id="textbox" placeholder="Text for Lockerdome" rows="6"></textarea>
 								</div>
+								
 							</section>
 
 						<!-- Two -->
@@ -65,46 +68,15 @@
 								<div class="container">
 									<h3>Images</h3>
 									<p>Drag or Browse for Images to be uploaded to Lockerdome</p>
-									<ul class="feature-icons">
-										<li class="fa-code">Write all the code</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
-										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
-									</ul>
-								</div>
+						  		<form action="/upload-target" class="dropzone"></form>
 							</section>
 
 						<!-- Three -->
 							<section id="three">
 								<div class="container">
 									<h3>Preview</h3>
-									<p>This is what your Lockerdome will look like. Make sure you like it before you upload!</p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4></h4>
-												<p></p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4></h4>
-												<p></p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4></h4>
-												<p></p>
-											</div>
-										</article>
+									<p><a href="http://en.wikipedia.org/"></a><class="box"><iframe src="http://en.wikipedia.org/" width = "500px" height = "500px"></iframe></p>
 									</div>
-								</div>
 							</section>
 
 						<!-- Four -->
@@ -114,20 +86,10 @@
 									<p></p>
 									<form method="post" action="#">
 										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-										</div>
-										<div class="row uniform">
 											<div class="12u">
 												<ul class="actions">
-													<li><input type="submit" class="special" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
+													<li><input type="submit" class="special" value="Upload to Lockerdome" /></li>
+													<li><input type="reset" value="Reset" /></li>
 												</ul>
 											</div>
 										</div>
@@ -501,8 +463,11 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+			<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
