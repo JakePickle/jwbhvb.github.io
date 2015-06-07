@@ -74,12 +74,13 @@
                 <div class="container">
                   <h3>Upload</h3>
                   <p id="update" clickable=true>Update</p>
-                  <button class="button.link">Upload</button>
-                  $(".link").click(function(){
-                  	document.getElementById("textbox")="here-1";
-                  });
-
+                  <button id="pickles">Upload</button>
+                  
                         <script>
+                        var button = document.getElementById("pickles");
+					button.onclick = function(){
+					  document.getElementById("textbox")="here-1";
+					}
       document.getElementById("update").onclick=function() {myFunc()};
       function myFunc(){
       	var name=document.getElementById("textbox1").value;
