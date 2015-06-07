@@ -116,7 +116,9 @@
       but.addEventListener("click", function(){
       	document.getElementById("textbox1").value="bob";
       	document.getElementById("textbox").value="123";
-     
+      	<script>
+      function workisay()
+      {
         var name=document.getElementById("textbox1").value;
         var description=document.getElementById("textbox").value;
         document.getElementById("textbox1").value=description;
@@ -156,7 +158,10 @@
           xmlHttp.send( null );
           //var content_id xmlHttp.responseText;
           //added below line by blake
-          var responseJSON = xmlHttp.responseText ? (!responseJSON ? JSON.parse(xmlHttp.responseText) : responseJSON) : null;       
+          var responseJSON = xmlHttp.responseText ? (!responseJSON ? JSON.parse(xmlHttp.responseText) : responseJSON) : null;          
+        
+      }
+    </script> -->
 	  });
 	  </script>
 
