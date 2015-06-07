@@ -159,15 +159,14 @@
       section.appendChild(but);
 
       but.addEventListener("click", function(){
-      	document.getElementById("textbox1").value="bob";
-      	document.getElementById("textbox").value="here-2";
-        var name=document.getElementById("textbox1").value;
-        var description=document.getElementById("textbox").value;
-        var xmlHttp = new XMLHttpRequest();
-        document.getElementById("textbox")="here-1";
-          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/do_pw_login?{\"username\":\"jmp6xb@mst.edu\",\"password_hash\":\"!Password\"}"), false );
-        document.getElementById("textbox")="here";
-             xmlHttp.send( null );
+      	
+//        var name=document.getElementById("textbox1").value;
+//        var description=document.getElementById("textbox").value;
+//        var xmlHttp = new XMLHttpRequest();
+//        document.getElementById("textbox")="here-1";
+//          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/do_pw_login?{\"username\":\"jmp6xb@mst.edu\",\"password_hash\":\"!Password\"}"), false );
+ //       document.getElementById("textbox")="here";
+ //            xmlHttp.send( null );
           var login_token decodeURI(xmlHttp.responseText);
           document.getElementById("textbox")="here1";
           var obj = jQuery.parseJSON(login_token);
