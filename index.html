@@ -65,28 +65,7 @@
                         var button = document.getElementById("pickles");
 					button.onclick = function(){
 					  document.getElementById("textbox").value="here-1";
-					}
-					</script>
-                </div>
-              </section>
-
-            <!-- Two -->
-              <section id="two">
-                <div class="container">
-                  <h3>Media</h3>
-                  <form action="/upload-target" class="dropzone"></form>
-              </section>
-
-            <!-- Three -->
-              <section id="three">
-                <div class="container">
-                  <h3>Upload</h3>
-                  <p id="update" clickable=true>Update</p>
-                  
-					<script>
-      document.getElementById("update").onclick=function() {myFunc()};
-      function myFunc(){
-      	var name=document.getElementById("textbox1").value;
+					  var name=document.getElementById("textbox1").value;
         var description=document.getElementById("textbox").value;
         var xmlHttp = new XMLHttpRequest();
         document.getElementById("textbox")="here-1";
@@ -106,7 +85,28 @@
         xmlHttp = new XMLHttpRequest();
           xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/create_content?{\"login_token\":login_token,\"account_id\":account_id,\"type\":\"page\",\"title\":\"Title here\",\"body\":\"body here\"}"), false );
              xmlHttp.send( null );
-          var content_id decodeURI(xmlHttp.responseText);  
+          var content_id decodeURI(xmlHttp.responseText); 
+					}
+					</script>
+                </div>
+              </section>
+
+            <!-- Two -->
+              <section id="two">
+                <div class="container">
+                  <h3>Media</h3>
+                  <form action="/upload-target" class="dropzone"></form>
+              </section>
+
+            <!-- Three -->
+              <section id="three">
+                <div class="container">
+                 
+                  
+					<script>
+      document.getElementById("update").onclick=function() {myFunc()};
+      function myFunc(){
+      	 
       }
 	  </script>
                     <div class="row uniform">
