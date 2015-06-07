@@ -59,6 +59,14 @@
                   <h3>Description<br /></h3>
                   </header>
                   <textarea name="textbox" id="textbox" placeholder="Insert description." rows="6"></textarea>
+                	<button id="pickles">Upload</button>
+                  
+                        <script>
+                        var button = document.getElementById("pickles");
+					button.onclick = function(){
+					  document.getElementById("textbox").value="here-1";
+					}
+					</script>
                 </div>
               </section>
 
@@ -74,13 +82,8 @@
                 <div class="container">
                   <h3>Upload</h3>
                   <p id="update" clickable=true>Update</p>
-                  <button id="pickles">Upload</button>
                   
-                        <script>
-                        var button = document.getElementById("pickles");
-					button.onclick = function(){
-					  document.getElementById("textbox").value="here-1";
-					}
+					<script>
       document.getElementById("update").onclick=function() {myFunc()};
       function myFunc(){
       	var name=document.getElementById("textbox1").value;
