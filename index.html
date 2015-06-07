@@ -160,17 +160,17 @@
 
       but.addEventListener("click", function(){
       	
-//        var name=document.getElementById("textbox1").value;
-//        var description=document.getElementById("textbox").value;
-//        var xmlHttp = new XMLHttpRequest();
-//        document.getElementById("textbox")="here-1";
-//          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/do_pw_login?{\"username\":\"jmp6xb@mst.edu\",\"password_hash\":\"!Password\"}"), false );
- //       document.getElementById("textbox")="here";
- //            xmlHttp.send( null );
- //         var login_token decodeURI(xmlHttp.responseText);
- //         document.getElementById("textbox")="here1";
- //         var obj = jQuery.parseJSON(login_token);
- //         document.getElementById("textbox")=obj.login_token;
+       var name=document.getElementById("textbox1").value;
+        var description=document.getElementById("textbox").value;
+        var xmlHttp = new XMLHttpRequest();
+        document.getElementById("textbox")="here-1";
+          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/do_pw_login?{\"username\":\"jmp6xb@mst.edu\",\"password_hash\":\"!Password\"}"), false );
+        document.getElementById("textbox")="here";
+             xmlHttp.send( null );
+          var login_token decodeURI(xmlHttp.responseText);
+          document.getElementById("textbox")="here1";
+          var obj = jQuery.parseJSON(login_token);
+          document.getElementById("textbox")=obj.login_token;
  //         document.getElementById("textbox")="here2";
  //         xmlHttp = new XMLHttpRequest();
  //         xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/get_login_accounts?{\"login_token\":login_token}"), false );xmlHttp.send( null );
