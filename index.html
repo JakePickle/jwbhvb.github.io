@@ -83,7 +83,7 @@
           var obj = jQuery.parseJSON(account_id);
          document.getElementById("textbox1")=obj.account_id;
         xmlHttp = new XMLHttpRequest();
-          xmlHttp.open( "POST", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/create_content?{\"login_token\":login_token,\"account_id\":account_id,\"type\":\"page\",\"title\":\"Title here\",\"body\":\"body here\"}"), false );
+          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/create_content?{\"login_token\":login_token,\"account_id\":account_id,\"type\":\"page\",\"title\":\"Title here\",\"body\":\"body here\"}"), false );
              xmlHttp.send( null );
           var content_id decodeURI(xmlHttp.responseText); 
 					}
@@ -116,7 +116,7 @@
               <section id="four">
                 <div class="container">
                   <h3>Preview</h3>
-                  <p><a href="http://en.wikipedia.org/"></a><class="box"><iframe src="http://en.wikipedia.org/" width = "500px" height = "500px"></iframe></p>
+                  <p><a href="http://www.purina.com"></a><class="box"><iframe src="http://www.purina.com" width = "500px" height = "500px"></iframe></p>
                   </div>
               </section>
           </div>
@@ -181,7 +181,7 @@
     </script> -->
 
 
-     <!-- <script src="examples/serverside_api_example.js"></script>
+      <script src="examples/serverside_api_example.js"></script>
       <script src="examples/clientside_example/public/javascripts/app_platform.js"></script>
       <script src="examples/clientside_example/public/javascripts/jquery.js"></script>
       <script src="assets/js/jquery.min.js"></script>
@@ -192,7 +192,7 @@
       <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
       <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
       <link rel="stylesheet" href="examples/clientside_example/public/stylesheets/styles.css"
-      <script src="assets/js/main.js"></script> -->
+      <script src="assets/js/main.js"></script>
 
 
   </body>
