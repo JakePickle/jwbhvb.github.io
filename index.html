@@ -151,36 +151,30 @@
       }
     </script> -->
       <script>
-      var but=document.createElement("button");
-      but.innerHTML="Upload to lockerdome";
-
-      var section=document.getElementById("update");
-      section.appendChild(but);
-
-      but.addEventListener("click", function(){
-      	
-      // var name=document.getElementById("textbox1").value;
-      //  var description=document.getElementById("textbox").value;
+      document.getElementById("update").onclick=function() {myFunc()};
+      function myFunc(){
+      	var name=document.getElementById("textbox1").value;
+        var description=document.getElementById("textbox").value;
         var xmlHttp = new XMLHttpRequest();
-   //     document.getElementById("textbox")="here-1";
+        document.getElementById("textbox")="here-1";
           xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/do_pw_login?{\"username\":\"jmp6xb@mst.edu\",\"password_hash\":\"!Password\"}"), false );
-  //      document.getElementById("textbox")="here";
+        document.getElementById("textbox")="here";
              xmlHttp.send( null );
           var login_token decodeURI(xmlHttp.responseText);
-  //        document.getElementById("textbox")="here1";
-   //       var obj = jQuery.parseJSON(login_token);
-  //        document.getElementById("textbox")=obj.login_token;
- //         document.getElementById("textbox")="here2";
- //         xmlHttp = new XMLHttpRequest();
- //         xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/get_login_accounts?{\"login_token\":login_token}"), false );xmlHttp.send( null );
- //         var account_id decodeURI(xmlHttp.responseText[0]);
-   //       var obj = jQuery.parseJSON(account_id);
-   //       document.getElementById("textbox1")=obj.account_id;
-    //    xmlHttp = new XMLHttpRequest();
-    //      xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/create_content?{\"login_token\":login_token,\"account_id\":account_id,\"type\":\"page\",\"title\":\"Title here\",\"body\":\"body here\"}"), false );
-    //         xmlHttp.send( null );
-    //      var content_id decodeURI(xmlHttp.responseText);  
-	  });
+         document.getElementById("textbox")="here1";
+          var obj = jQuery.parseJSON(login_token);
+          document.getElementById("textbox")=obj.login_token;
+          document.getElementById("textbox")="here2";
+          xmlHttp = new XMLHttpRequest();
+          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/get_login_accounts?{\"login_token\":login_token}"), false );xmlHttp.send( null );
+          var account_id decodeURI(xmlHttp.responseText[0]);
+          var obj = jQuery.parseJSON(account_id);
+         document.getElementById("textbox1")=obj.account_id;
+        xmlHttp = new XMLHttpRequest();
+          xmlHttp.open( "GET", encodeURIComponent("http://api.globalhack4.test.lockerdome.com/create_content?{\"login_token\":login_token,\"account_id\":account_id,\"type\":\"page\",\"title\":\"Title here\",\"body\":\"body here\"}"), false );
+             xmlHttp.send( null );
+          var content_id decodeURI(xmlHttp.responseText);  
+      }
 	  </script>
 
       <script src="examples/serverside_api_example.js"></script>
